@@ -2,9 +2,10 @@ package com.example.springbootmysql.dao;
 
 
 import com.example.springbootmysql.entity.ReconWarningInfo;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-
+@Mapper
 public interface ReconWarningInfoMapper {
     int deleteByPrimaryKey(Long id);
 
