@@ -1,0 +1,9 @@
+server:
+  port: 8082
+spring:
+  redis:
+    database: 0
+    password:
+    port: 6379
+    host: ip
+    timeout: 2000
