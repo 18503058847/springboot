@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springboot-server
+    index: 0
+
+#  cloud:
+#    config:
+#      profile: dev
+#      failFast: true
+#      discovery:
+#        serviceId: config-server
+#        enabled: true
+#  autoconfigure:
+#      exclude: "org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"
+#app:
+#  performance.log.ignore.urls: /login, /register, /user
+
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://127.0.0.1:9081/eureka
+    register-with-eureka: false
+    fetch-registry: true
